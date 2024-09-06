@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bem pages</title>
+  </head>
+  <body>
+    <!-- Блок `header`-->
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__logo header__log--small"
+          src="img/par64.png"
+          alt="par64"
+        />
+      </div>
+      <nav class="header__nav">
+        <!-- Независимый блок `списка меню`, можно использовать вне header-->
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Обо мне</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Тема урока</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__search">
+        <!-- Независимый блок `поиска`, можно использовать вне header-->
+        <form class="search-form search-form--focused">
+          <input class="search-form__input" />
+          <button class="search-form__button">Найти</button>
+        </form>
+      </div>
+    </header>
+    <main class="content">
+      <h1 class="content__title">Добро пожаловать!</h1>
+      <p class="content__text">Это ДЗ по теме "Методология БЭМ"</p>
+
+      <!-- Добавьте свою информацию здесь -->
+      <section class="content__section">
+        <h2 class="content__section-title">Обо мне</h2>
+        <p class="content__section-text">
+          И снова здравствуйте! Меня зовут Дмитрий, я учусь Web-программированию
+          и это моя первая страничка с использованием методологии БЭМ.
+        </p>
+        <h2 class="content__section-title">Методология БЭМ</h2>
+        <p class="content__section-text">
+          БЭМ (Блок, Элемент, Модификатор) — компонентный подход к
+          веб-разработке. В его основе лежит принцип разделения интерфейса на
+          независимые блоки. Он позволяет легко и быстро разрабатывать
+          интерфейсы любой сложности и повторно использовать существующий код,
+          избегая «Copy-Paste».
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">© 2024 БЭМ web-сайт Par64</p>
+    </footer>
+  </body>
+</html>
